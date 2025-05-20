@@ -1286,7 +1286,7 @@ button {
   line-height: 80%;
   max-width: 540px;
   transform: rotate(-4deg);
-  color: #fff;
+  color: #ffff33;
 }
 
 @media screen and (max-width: 1023.98px) {
