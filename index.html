@@ -762,7 +762,7 @@ his inspiration</p>
               <span class="contract__label">Contract address:</span>
               <strong>TBA</strong>
             </div>
-            <button class="contract__copy" onclick="writeContract()">
+            <button class="contract__copy" onclick="navigator.clipboard.writeText('TBA')">
               Copy
             </button>
           </div>
@@ -773,13 +773,6 @@ his inspiration</p>
   <script src="./LAND DOG_files/gsap.min.js.download"></script>
   <script src="./LAND DOG_files/ScrollTrigger.min.js.download"></script>
   <script>
-    function writeContract() {
-      const contract = document
-        .querySelector('.contract__value strong')
-        .innerHTML.trim();
-      navigator.clipboard.writeText(contract);
-    }
-
     let CURRENT_MESSAGE = 0;
     const MESSAGES = [
       'Wassup dawg,\nmy name is\nFox',
